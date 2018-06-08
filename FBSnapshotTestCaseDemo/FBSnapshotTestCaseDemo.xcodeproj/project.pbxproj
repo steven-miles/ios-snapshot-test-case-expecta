@@ -11,6 +11,7 @@
 		60F67DEF1C9B52F100CEC69F /* EXPExpect+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F67DEA1C9B52BD00CEC69F /* EXPExpect+Test.m */; };
 		60F67DF01C9B52F400CEC69F /* FakeTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F67DEC1C9B52BD00CEC69F /* FakeTestCase.m */; };
 		60F986251977BFF200C01B03 /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F986241977BFF200C01B03 /* FBViewController.m */; };
+		842B51B973E310AF465BAE79 /* Pods_FBSnapshotTestCaseDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6FFA465A67D085CE0C00ED /* Pods_FBSnapshotTestCaseDemoTests.framework */; };
 		A24E010717F9A42A001252DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24E010617F9A42A001252DB /* Foundation.framework */; };
 		A24E010917F9A42A001252DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24E010817F9A42A001252DB /* CoreGraphics.framework */; };
 		A24E010B17F9A42A001252DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24E010A17F9A42A001252DB /* UIKit.framework */; };
@@ -23,7 +24,6 @@
 		A24E012217F9A42A001252DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24E010A17F9A42A001252DB /* UIKit.framework */; };
 		A24E012A17F9A42A001252DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A24E012817F9A42A001252DB /* InfoPlist.strings */; };
 		A257F0C917FA982900AB1B02 /* FBExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A257F0C817FA982800AB1B02 /* FBExampleView.m */; };
-		F33B813D491747855AC6CE08 /* libPods-FBSnapshotTestCaseDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F3C0717F7D4F04443FBB5F /* libPods-FBSnapshotTestCaseDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		3C86867B1885C92500D82C8A /* FBSnapshotTestCaseDemoSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSnapshotTestCaseDemoSpecs.m; sourceTree = "<group>"; };
-		56F3C0717F7D4F04443FBB5F /* libPods-FBSnapshotTestCaseDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FBSnapshotTestCaseDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F67DE81C9B482600CEC69F /* Expecta+Snapshots.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = "Expecta+Snapshots.podspec"; path = "../../Expecta+Snapshots.podspec"; sourceTree = "<group>"; };
 		60F67DE91C9B52BD00CEC69F /* EXPExpect+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPExpect+Test.h"; sourceTree = "<group>"; };
 		60F67DEA1C9B52BD00CEC69F /* EXPExpect+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPExpect+Test.m"; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		A257F0C817FA982800AB1B02 /* FBExampleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBExampleView.m; sourceTree = "<group>"; };
 		AC94E92D59FBB1261D9DF39F /* Pods-FBSnapshotTestCaseDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBSnapshotTestCaseDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBSnapshotTestCaseDemoTests/Pods-FBSnapshotTestCaseDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		B7264E4697CCD1CCB43CECD9 /* Pods-FBSnapshotTestCaseDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBSnapshotTestCaseDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBSnapshotTestCaseDemoTests/Pods-FBSnapshotTestCaseDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC6FFA465A67D085CE0C00ED /* Pods_FBSnapshotTestCaseDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBSnapshotTestCaseDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 				A24E012017F9A42A001252DB /* XCTest.framework in Frameworks */,
 				A24E012217F9A42A001252DB /* UIKit.framework in Frameworks */,
 				A24E012117F9A42A001252DB /* Foundation.framework in Frameworks */,
-				F33B813D491747855AC6CE08 /* libPods-FBSnapshotTestCaseDemoTests.a in Frameworks */,
+				842B51B973E310AF465BAE79 /* Pods_FBSnapshotTestCaseDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +129,7 @@
 				A24E010817F9A42A001252DB /* CoreGraphics.framework */,
 				A24E010A17F9A42A001252DB /* UIKit.framework */,
 				A24E011F17F9A42A001252DB /* XCTest.framework */,
-				56F3C0717F7D4F04443FBB5F /* libPods-FBSnapshotTestCaseDemoTests.a */,
+				EC6FFA465A67D085CE0C00ED /* Pods_FBSnapshotTestCaseDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -285,13 +285,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBSnapshotTestCaseDemoTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A14A4D4A997975BB6DA331BA /* [CP] Embed Pods Frameworks */ = {
@@ -300,9 +303,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FBSnapshotTestCaseDemoTests/Pods-FBSnapshotTestCaseDemoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
+				"${BUILT_PRODUCTS_DIR}/Expecta+Snapshots/Expecta_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
