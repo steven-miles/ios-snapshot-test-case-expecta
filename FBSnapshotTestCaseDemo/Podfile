@@ -1,11 +1,12 @@
 source 'https://github.com/artsy/Specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '8.1'
+platform :ios, '10.0'
 
 use_frameworks!
 target 'FBSnapshotTestCaseDemoTests' do
   pod 'Specta'
   pod 'Expecta+Snapshots', :path => "../"
-  pod 'iOSSnapshotTestCase', git: 'https://github.com/smoothdvd/ios-snapshot-test-case.git'
+  pod 'iOSSnapshotTestCase/Core', '~> 5.0.2'
+  #pod 'iOSSnapshotTestCase', git: 'https://github.com/smoothdvd/ios-snapshot-test-case.git'
 end

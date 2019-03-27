@@ -9,7 +9,6 @@
 #define EXP_SHORTHAND
 #include <Specta/Specta.h>
 #include <Expecta/Expecta.h>
-#include <Expecta+Snapshots/EXPMatchers+FBSnapshotTest.h>
 #import <FBSnapshotTestCase/FBSnapshotTestCasePlatform.h>
 
 #include "FBExampleView.h"
@@ -23,6 +22,8 @@ XCTAssertNoThrow((expr))
 
 #import <malloc/malloc.h>
 #import <objc/runtime.h>
+
+@import Expecta_Snapshots;
 
 SpecBegin(FBExampleView)
 
