@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = '*.{h,m}'
   s.frameworks   = 'Foundation', 'XCTest'
-  s.dependency     'iOSSnapshotTestCase/Core', '~> 5.0.2'
+  s.dependency     'iOSSnapshotTestCase/Core', '~> 6.0.0'
   s.dependency     'Expecta', '~> 1.0'
   s.dependency     'Specta', '~> 1.0'
-  
+
   s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 end
