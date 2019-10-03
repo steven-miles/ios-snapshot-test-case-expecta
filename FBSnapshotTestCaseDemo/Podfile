@@ -7,6 +7,6 @@ use_frameworks!
 target 'FBSnapshotTestCaseDemoTests' do
   pod 'Specta'
   pod 'Expecta+Snapshots', :path => "../"
-  pod 'iOSSnapshotTestCase/Core', '~> 5.0.2'
+  pod 'iOSSnapshotTestCase/Core', '~> 6.0.0'
   #pod 'iOSSnapshotTestCase', git: 'https://github.com/smoothdvd/ios-snapshot-test-case.git'
 end
