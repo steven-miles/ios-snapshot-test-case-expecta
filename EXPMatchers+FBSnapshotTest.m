@@ -25,7 +25,6 @@
     snapshotController.recordMode = record;
     snapshotController.referenceImagesDirectory = referenceDirectory;
     snapshotController.usesDrawViewHierarchyInRect = [Expecta usesDrawViewHierarchyInRect];
-    //    snapshotController.deviceAgnostic = [Expecta isDeviceAgnostic];
     snapshotController.imageDiffDirectory = NSTemporaryDirectory();
   
     if (! snapshotController.referenceImagesDirectory) {
@@ -118,7 +117,7 @@ void setGlobalReferenceImageDir(char *reference) {
 #import <Specta/SpectaUtility.h>
 #import <Specta/SPTExample.h>
 
-NSString *sanitizedTestPath();
+NSString *sanitizedTestPath(void);
 
 NSString *sanitizedTestPath(){
     id compiledExample = [[NSThread currentThread] threadDictionary][@"SPTCurrentSpec"]; // SPTSpec
