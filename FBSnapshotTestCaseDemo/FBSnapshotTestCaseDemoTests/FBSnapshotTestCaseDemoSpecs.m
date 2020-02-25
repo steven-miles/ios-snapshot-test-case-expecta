@@ -55,7 +55,7 @@ describe(@"snapshots", ^{
             it(@"named", ^{
                 expect(view).toNot.recordSnapshotNamed(@"view 1"); // Using "toNot" because recording always causes the test to fail.
                 NSString *imageName = [[fileManager contentsOfDirectoryAtPath:imagesDirectory error:nil] firstObject];
-                expect(imageName).to.contain(@"view 1");
+                expect(imageName).to.contain(@"view_1");
             });
 
             it(@"unnamed", ^{
@@ -117,7 +117,7 @@ describe(@"snapshots", ^{
                 expect(controller.viewWillAppearCalled).to.beTruthy();
                 expect(controller.viewDidAppearCalled).to.beTruthy();
                 NSString *imageName = [[fileManager contentsOfDirectoryAtPath:imagesDirectory error:nil] firstObject];
-                expect(imageName).to.contain(@"view controller 1");
+                expect(imageName).to.contain(@"view_controller_1");
             });
 
 
@@ -218,7 +218,7 @@ describe(@"snapshots", ^{
         expect(controller.viewWillAppearCalled).to.beTruthy();
         expect(controller.viewDidAppearCalled).to.beTruthy();
         NSString *imageName = [[fileManager contentsOfDirectoryAtPath:imagesDirectory error:nil] firstObject];
-        NSString *expectedImageName = FBDeviceAgnosticNormalizedFileName(@"view controller 1");
+        NSString *expectedImageName = FBFileNameIncludeNormalizedFileNameFromOption(@"view controller 1", FBSnapshotTestCaseFileNameIncludeOptionScreenScale);
         expect(imageName).to.contain(expectedImageName);
       });
       
@@ -227,7 +227,7 @@ describe(@"snapshots", ^{
         expect(controller.viewWillAppearCalled).to.beTruthy();
         expect(controller.viewDidAppearCalled).to.beTruthy();
         NSString *imageName = [[fileManager contentsOfDirectoryAtPath:imagesDirectory error:nil] firstObject];
-        NSString *expectedImageName = FBDeviceAgnosticNormalizedFileName(@"snapshots_device_agnostic_recording_unnamed");
+        NSString *expectedImageName = FBFileNameIncludeNormalizedFileNameFromOption(@"snapshots_device_agnostic_recording_unnamed", FBSnapshotTestCaseFileNameIncludeOptionScreenScale);
         expect(imageName).to.contain(expectedImageName);
       });
       

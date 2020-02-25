@@ -25,7 +25,6 @@
     snapshotController.recordMode = record;
     snapshotController.referenceImagesDirectory = referenceDirectory;
     snapshotController.usesDrawViewHierarchyInRect = [Expecta usesDrawViewHierarchyInRect];
-    snapshotController.deviceAgnostic = [Expecta isDeviceAgnostic];
     snapshotController.imageDiffDirectory = NSTemporaryDirectory();
   
     if (! snapshotController.referenceImagesDirectory) {
