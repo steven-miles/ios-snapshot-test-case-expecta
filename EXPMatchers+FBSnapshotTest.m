@@ -18,7 +18,14 @@
     return instance;
 }
 
-+ (BOOL)compareSnapshotOfViewOrLayer:(id)viewOrLayer snapshot:(NSString *)snapshot testCase:(id)testCase record:(BOOL)record referenceDirectory:(NSString *)referenceDirectory tolerance:(CGFloat)tolerance error:(NSError **)error
++ (BOOL)compareSnapshotOfViewOrLayer:(id)viewOrLayer
+                            snapshot:(NSString *)snapshot
+                            testCase:(id)testCase
+                              record:(BOOL)record
+                  referenceDirectory:(NSString *)referenceDirectory
+                   perPixelTolerance:(CGFloat)perPixelTolerance
+                           tolerance:(CGFloat)tolerance
+                               error:(NSError **)error
 
 {
     FBSnapshotTestController *snapshotController = [[FBSnapshotTestController alloc] initWithTestClass:[testCase class]];
@@ -31,6 +38,32 @@
         [NSException raise:@"Missing value for referenceImagesDirectory" format:@"Call [[EXPExpectFBSnapshotTest instance] setReferenceImagesDirectory"];
     }
 
+    return [snapshotController compareSnapshotOfViewOrLayer:viewOrLayer
+                                                   selector:NSSelectorFromString(snapshot)
+                                                 identifier:nil
+                                          perPixelTolerance:perPixelTolerance
+                                           overallTolerance:tolerance
+                                                      error:error];
+}
+
++ (BOOL)compareSnapshotOfViewOrLayer:(id)viewOrLayer
+                            snapshot:(NSString *)snapshot
+                            testCase:(id)testCase
+                              record:(BOOL)record
+                  referenceDirectory:(NSString *)referenceDirectory
+                           tolerance:(CGFloat)tolerance error:(NSError **)error
+
+{
+    FBSnapshotTestController *snapshotController = [[FBSnapshotTestController alloc] initWithTestClass:[testCase class]];
+    snapshotController.recordMode = record;
+    snapshotController.referenceImagesDirectory = referenceDirectory;
+    snapshotController.usesDrawViewHierarchyInRect = [Expecta usesDrawViewHierarchyInRect];
+    snapshotController.imageDiffDirectory = NSTemporaryDirectory();
+  
+    if (! snapshotController.referenceImagesDirectory) {
+        [NSException raise:@"Missing value for referenceImagesDirectory" format:@"Call [[EXPExpectFBSnapshotTest instance] setReferenceImagesDirectory"];
+    }
+    
     return [snapshotController compareSnapshotOfViewOrLayer:viewOrLayer
                                                    selector:NSSelectorFromString(snapshot)
                                                  identifier:nil
